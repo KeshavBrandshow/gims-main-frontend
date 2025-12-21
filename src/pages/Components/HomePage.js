@@ -5,6 +5,10 @@ import AcademicsSection from "./AcademicsSection";
 import RankingHero from "./RankingHero";
 import MainMenu from "./MainMenu";
 import FlagShip from "./FlagShip";
+import FlagShip1 from "./FlagShip1";
+import Footer from "./Footer";
+import FlagShip2 from "./FlagShip2";
+import FlagShip3 from "./FlagShip3";
 
 const HomePage = () => {
   return (
@@ -15,6 +19,10 @@ const HomePage = () => {
       <AcademicsSection />
       <RankingHero />
       <FlagShip />
+      <FlagShip1 /> 
+      <FlagShip2 />
+      <FlagShip3 />   
+      <Footer />         
     </>
   );
 };
