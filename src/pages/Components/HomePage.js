@@ -9,6 +9,7 @@ import FlagShip1 from "./FlagShip1";
 import Footer from "./Footer";
 import FlagShip2 from "./FlagShip2";
 import FlagShip3 from "./FlagShip3";
+import StatsSection from "./StatsSection";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Hero />
       <JumpToSection />
       <AcademicsSection />
+      <StatsSection />
       <RankingHero />
       <FlagShip />
       <FlagShip1 /> 
