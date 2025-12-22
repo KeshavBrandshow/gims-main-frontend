@@ -385,7 +385,7 @@ const MainMenu = () => {
                     <Image src='https://www.gims.net.in/img/gims-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto' />
                   </div>
                   <div>
-                    <div className="text-white font-serif tracking-[0.15em] text-lg">FLAGLER</div>
+                    <div className="text-white font-serif tracking-[0.15em] text-lg">GIMS</div>
                     <div className="text-white font-serif tracking-[0.2em] text-xs -mt-1 opacity-90">COLLEGE</div>
                   </div>
                 </a>

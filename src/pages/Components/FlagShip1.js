@@ -2,6 +2,7 @@
 import { Fullscreen } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+
 const FlagShip1 = () => {
   return (
     <>
@@ -20,22 +21,28 @@ const FlagShip1 = () => {
               </h1>
 
               <p className="text-black py-2 text-lg text-left px-2 leading-8">
-                FlagSHIP happens sophomore year. Here’s the thing: You will love
-                it. The courses are challenging but worth it. And at the end,
-                you’ll pack your bags and head out with your class.
+                PGDM 4.0 (Idea to Execution) at GIMS is the flagship programme
+                that blends classroom concepts with live projects, industry
+                immersion and global exposure so that students learn how
+                management really works on ground.
               </p>
 
               <p className="text-black py-2 text-lg text-left px-3 leading-8">
-                Explore Scotland&apos;s hospitality, tackle Jordan&apos;s water
-                scarcity, or dive into Costa Rican farming.
+                Under the International Immersion Program <span className="font-semibold">FERNWEH</span>,
+                PGDM students travel across multiple countries, interact with
+                global universities and corporates, and experience diverse
+                cultures and business ecosystems first‑hand.
               </p>
 
-              <p className="text-black text-lg text-left px-2">
-                We learn by doing. Are you ready?
-              </p>
+              <p className="text-black text-lg text-left px-2 leading-8">
+                From boardrooms in global cities to field visits and
+                simulations, every milestone is designed to move you from
+                theory to action. Ready to take your learning beyond
+                borders?
+                </p>
 
               <div className="text-[#6f081d] font-bold rounded-tr-2xl rounded-bl-2xl py-2 text-md text-left px-2 bg-yellow-500 w-fit ml-2 shadow-lg hover:shadow-[#fdb924] mt-4 cursor-pointer hover:scale-110 duration-300">
-                FlagSHIP
+                Flagship PGDM 4.0
               </div>
             </div>
           </div>

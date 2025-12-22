@@ -24,12 +24,11 @@ const HomePage = () => {
       <HandsOnSection />
       <RankingHero />
       <FlagShip />
-      <FlagShip1 /> 
-            <NewsSection />
+      <FlagShip1 />
+      <NewsSection />
       <FlagShip2 />
-
-      <FlagShip3 />   
-      <Footer />         
+      <FlagShip3 />
+      <Footer />
     </>
   );
 };

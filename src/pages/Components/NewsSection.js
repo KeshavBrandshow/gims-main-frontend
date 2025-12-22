@@ -38,7 +38,7 @@ const newsItems = [
 
 const NewsSection = () => {
   return (
-    <section className="bg-white py-10 sm:py-12 lg:py-16">
+    <section className="bg-white py-10 sm:py-12 lg:py-16 lg:pb-40 pb-4">
       <div className="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-8 sm:mb-10">
