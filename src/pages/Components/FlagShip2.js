@@ -11,8 +11,8 @@ const FlagShip2 = () => {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           {/* LEFT: wider arched image */}
           <div className="relative flex-shrink-0">
-            <div className="bg-[rgba(158,35,57,.7)] w-[320px] sm:w-[380px] md:w-[430px] lg:w-[480px] h-[440px] sm:h-[480px] md:h-[540px] rounded-t-[260px] shadow-md relative">
-              <div className="bg-[#9e2339] w-[92%] h-[92%] rounded-t-[260px] p-2 absolute left-1/2 -translate-x-1/2 bottom-0 shadow-lg">
+            <div className="bg-yellow-200  w-[320px] sm:w-[380px] md:w-[430px] lg:w-[480px] h-[440px] sm:h-[480px] md:h-[540px] rounded-t-[260px] shadow-md relative">
+              <div className="bg-yellow-400 w-[92%] h-[92%] rounded-t-[260px] p-2 absolute left-1/2 -translate-x-1/2 bottom-0 shadow-lg">
                 <div className="relative w-full h-full rounded-t-[260px] overflow-hidden">
                   <Image
                     src="/images/flagship3_0.jpg.webp"
