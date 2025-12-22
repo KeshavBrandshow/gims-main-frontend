@@ -1,13 +1,13 @@
 // src/components/RankingHero.jsx
 import React from "react";
-// import classroomHero from "/images/classroom-hero.jpg"; 
 
 const RankingHero = () => {
   return (
-    <section className="w-full bg-primary card-bg">
+    // whole strip white
+    <section className="w-full bg-white mb-20">
       <div className="max-w-8xl mx-auto flex flex-col lg:flex-row">
         {/* Left: Image */}
-        <div className="lg:w-2/3 w-full">
+        <div className="lg:w-2/3 w-full bg-white">
           <img
             src="https://www.flagler.edu/sites/default/files/styles/media_banner/public/2024-01/Academics%20Page%20Meet%20Our%20Faculty%201500x900.jpg.webp?itok=uoVeIE8K"
             alt="Professor teaching students in classroom"
@@ -15,14 +15,14 @@ const RankingHero = () => {
           />
         </div>
 
-        {/* Right: Content */}
-        <div className="lg:w-1/3 w-full flex items-center bg-primary px-8 py-10">
+        {/* Right: Content panel (keeps primary color) */}
+        <div className="lg:w-1/3 w-full flex items-center bg-white px-8 py-10">
           <div className="space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold text-secondary font-cursive">
               Our Rankings
             </h2>
 
-            <p className=" text-slate-50 text-base leading-relaxed">
+            <p className="main-text text-base leading-relaxed">
               Our recent accolades reflect our commitment to transformative
               academics and a vibrant student experience. We invite you to
               explore our College rankings to see what leading organizations

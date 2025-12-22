@@ -11,6 +11,7 @@ import FlagShip2 from "./FlagShip2";
 import FlagShip3 from "./FlagShip3";
 import StatsSection from "./StatsSection";
 import HandsOnSection from "./HandsOnSection";
+import NewsSection from "./NewsSection";
 
 const HomePage = () => {
   return (
@@ -24,7 +25,9 @@ const HomePage = () => {
       <RankingHero />
       <FlagShip />
       <FlagShip1 /> 
+            <NewsSection />
       <FlagShip2 />
+
       <FlagShip3 />   
       <Footer />         
     </>
