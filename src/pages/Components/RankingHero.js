@@ -4,7 +4,7 @@ import React from "react";
 const RankingHero = () => {
   return (
     // whole strip white
-    <section className="w-full bg-white mb-20">
+    <section className="w-full bg-white">
       <div className="max-w-8xl mx-auto flex flex-col lg:flex-row">
         {/* Left: Image (unchanged) */}
         <div className="lg:w-2/3 w-full bg-white">
