@@ -10,6 +10,14 @@ const nextConfig = {
         hostname: 'www.gims.net.in',
         pathname: '/img/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
 
     // or, simpler alternative:

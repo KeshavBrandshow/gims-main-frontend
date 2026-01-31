@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Brand Colors defined as variables for Tailwind v4 theme usage */
+  --color-primary-blue: #033E96;
+  --color-primary-yellow: #FFC300;
+  --color-secondary-red: #822433;
 }
 
 @theme inline {
@@ -10,6 +15,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Extending theme with brand colors */
+  --color-brand-blue: var(--color-primary-blue);
+  --color-brand-yellow: var(--color-primary-yellow);
+  --color-brand-red: var(--color-secondary-red);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,29 +40,29 @@ body {
     font-family: "Cursive", cursive;
   }
 
-  /* Custom Colors */
+  /* Custom Colors - Mapped to new variables */
   .bg-primary {
-    @apply bg-sky-900; /* Hero, buttons, headers */
+    @apply bg-brand-blue;
   }
 
   .bg-secondary {
-    @apply bg-yellow-500; /* Accents, highlights */
+    @apply bg-brand-yellow;
   }
 
   .text-primary {
-    @apply text-sky-900; /* Headings, links */
+    @apply text-brand-blue;
   }
 
   .text-secondary {
-    @apply text-yellow-500; /* Badges, stats, highlights */
+    @apply text-brand-yellow;
   }
 
   .main-text {
-    @apply text-gray-800; /* Main Text */
+    @apply text-gray-800;
   }
 
   .card-bg {
-    @apply text-slate-50; /* Sections, cards */
+    @apply text-slate-50;
   }
 
   /* Background image for FlagShip section */
