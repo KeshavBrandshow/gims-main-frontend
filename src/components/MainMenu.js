@@ -55,7 +55,12 @@ const MainMenu = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-[#033E96]' : 'bg-transparent'}`}
       >
-        <div className="border-b border-white border-opacity-20">
+        {/* Extended gradient shade for better visibility */}
+        {!isScrolled && (
+          <div className="absolute top-0 left-0 w-full h-[250px] bg-gradient-to-b from-black/80 via-black/40 to-transparent -z-10 pointer-events-none transition-all duration-300" />
+        )}
+
+        <div className="border-b border-white border-opacity-20 relative z-10">
           <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
             <div className="hidden md:flex justify-end items-center gap-3 py-2 text-sm overflow-x-auto">
               {['Examination', 'Alumni', 'Research', 'IQAC', 'Virtual Tour'].map((link) => (
@@ -76,8 +81,8 @@ const MainMenu = () => {
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center gap-3">
                 <div className="flex items-center gap-2">
-                  <div className="rounded-sm flex items-center justify-center border-2 border-[#FFC300] relative">
-                    <Image src='https://www.gims.net.in/img/gims-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto' />
+                  <div className="rounded-sm flex items-center justify-center relative bg-white">
+                    <Image src='/images/main-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto px-2 py-2' />
                   </div>
                   <div>
                     <div className="text-white font-serif tracking-[0.15em] text-lg">GIMS</div>
@@ -93,7 +98,7 @@ const MainMenu = () => {
                   <button
                     key={key}
                     onClick={() => handleMegaMenuClick(key)}
-                    className={`text-white hover:text-[#FFC300] transition-colors text-sm font-medium cursor-pointer ${activeMegaMenu === key ? 'font-bold text-[#FFC300]' : ''}`}
+                    className={`text-white hover:text-[#FFC300] transition-colors text-xl font-bold tracking-wide cursor-pointer ${activeMegaMenu === key ? 'text-[#FFC300]' : ''}`}
                   >
                     {megaMenuContent[key].title}
                   </button>
@@ -240,8 +245,8 @@ const MainMenu = () => {
             <div className="bg-[#033E96] border-b border-[#0451C4]">
               <div className="max-w-[1400px] mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
                 <a href="#" className="flex items-center gap-3">
-                  <div className="rounded-sm flex items-center justify-center border-2 border-[#FFC300] relative">
-                    <Image src='https://www.gims.net.in/img/gims-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto' />
+                  <div className="rounded-sm flex items-center justify-center relative bg-white">
+                    <Image src='/images/main-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto px-2 py-2' />
                   </div>
                   <div>
                     <div className="text-white font-serif tracking-[0.15em] text-lg">GIMS</div>

@@ -18,7 +18,7 @@ export default function JumpToSection() {
   };
 
   return (
-    <section className="bg-primary py-6">
+    <section className="bg-primary py-6 pb-15">
       <div className="max-w-6xl mx-auto px-4">
         <div className="inline-block">
           <div className="relative">

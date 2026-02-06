@@ -15,7 +15,7 @@ export default function Footer() {
         {/* LEFT : Logo */}
         <div className="flex-shrink-0 w-32 sm:w-40 md:w-48 lg:w-56 flex justify-center lg:justify-start">
           <Image
-            src="https://www.gims.net.in/img/gims-logo.png"
+            src="/images/main-logo.png"
             alt="GIMS Greater Noida"
             width={140}
             height={45}

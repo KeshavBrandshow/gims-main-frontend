@@ -12,9 +12,9 @@ export default function StatsSection() {
             <div className="grid gap-10 lg:gap-24 lg:grid-cols-3 ">
               {/* Stat 1 */}
               <div>
-                <p className="font-cursive text-5xl lg:text-6xl text-primary">
+                <h3 className="text-5xl lg:text-6xl text-primary">
                   93%
-                </p>
+                </h3>
                 <div className="mt-3 mb-4">
                   <span className="block w-16 border-t-2 border-sky-900/40" />
                 </div>
@@ -26,9 +26,9 @@ export default function StatsSection() {
 
               {/* Stat 2 */}
               <div>
-                <p className="font-cursive text-5xl lg:text-6xl text-primary">
+                <h3 className="text-5xl lg:text-6xl text-primary">
                   ₹23.31L
-                </p>
+                </h3>
                 <div className="mt-3 mb-4">
                   <span className="block w-16 border-t-2 border-sky-900/40" />
                 </div>
@@ -40,9 +40,9 @@ export default function StatsSection() {
 
               {/* Stat 3 */}
               <div>
-                <p className="font-cursive text-5xl lg:text-6xl text-primary">
+                <h3 className="text-5xl lg:text-6xl text-primary">
                   450+
-                </p>
+                </h3>
                 <div className="mt-3 mb-4">
                   <span className="block w-16 border-t-2 border-sky-900/40" />
                 </div>
@@ -67,7 +67,7 @@ export default function StatsSection() {
           <div className="w-full lg:w-5/12 flex lg:justify-end">
             <div className="relative w-full h-64 lg:h-full min-h-[300px]">
               <img
-                src="/images/homepage/building.jfif"
+                src="/images/about-us.jpg"
                 alt="Students in front of campus building"
                 className="w-full h-full object-cover"
               />
