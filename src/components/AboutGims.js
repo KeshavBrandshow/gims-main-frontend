@@ -8,7 +8,7 @@ const AboutGims = () => {
         <>
             <section className="relative w-full ">
                 {/* Hero Section with Background Image */}
-                <div className="relative h-[600px] w-full">
+                <div className="relative h-[450px] w-full">
                     <Image
                         src="/images/about-us.jpg"
                         alt="About GIMS"
@@ -32,16 +32,16 @@ const AboutGims = () => {
 
                 {/* Blue Content Section with Angled Top */}
                 <div
-                    className="relative bg-[#033E96] text-white -mt-24 pt-32 pb-24 px-6 md:px-12"
+                    className="relative bg-[#033E96] text-white -mt-24 pt-32 pb-12 px-6 md:px-12"
                     style={{ clipPath: 'polygon(0 6rem, 100% 0, 100% 100%, 0 100%)' }}
                 >
                     <div className="max-w-8xl mx-auto flex flex-col items-center text-center">
-                        <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-16 font-medium max-w-8xl text-justify">
+                        <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8 font-medium max-w-8xl text-justify">
                             In a short span of time, GIMS has become the most sought after name for post-graduation in the management field. Fostering the entrepreneurial intent, focusing on delivering a holistic and futuristic education, GIMS is approved by AICTE and accredited by HLACT, UK (the first institute in the Northern Part of the country and the only institute in NCR). We are proud to have the academic partnership with the IIM, Bangalore for the certification courses on contemporary business topics. LSUS and EMI to name a few are our foreign collaborations, to inculcate global exposure for the incumbents of the course. An distinguished network of advisors, a strong corporate connect, ground breaking experiential learning, a flexible and industry-driven curriculum, a faculty cohort that combines academic reputation with real-life experience corporate exposure, and above all, a highly collaborative community of peers, supporters, and mentors define the philosophy of GIMS, Greater Noida - Idea to Execution located in the City of Future, Greater Noida. Be a part of the GIMS family and experience the difference in teaching learning system and discover the personal and professional benefits of partnering with us.
                         </p>
 
                         {/* Stats/Highlights */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 w-full max-w-3xl">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-8 w-full max-w-3xl">
                             <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
                                 <div className="p-4 bg-white/10 rounded-full text-[#FFC300]">
                                     <Globe2 size={32} />
@@ -76,42 +76,72 @@ const AboutGims = () => {
                     {/* Pattern restricted to this section */}
                     <div className="absolute inset-0 -top-20 -mx-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-100 pointer-events-none invert mix-blend-multiply" />
 
-                    <p className="text-center text-4xl text-[#033E96] font-bold uppercase tracking-widest  mb-10 relative z-10">Accreditations & Collaborations</p>
+                    <p className="text-center text-2xl md:text-3xl lg:text-4xl text-[#033E96] font-bold uppercase tracking-widest mb-6 md:mb-10 relative z-10 px-4">Accreditations & Collaborations</p>
 
-                    <div className="flex flex-col items-center gap-4 relative z-10 pb-20">
-                        {[
-                            [
+                    <div className="relative z-10 pb-12 md:pb-20 px-4">
+                        {/* Mobile Grid View */}
+                        <div className="grid grid-cols-2 xs:grid-cols-3 gap-3 md:hidden">
+                            {[
                                 { src: "aibpm.jpg", alt: "AIBPM" },
-                                { src: "aicte.jpg", alt: "AICTE" }
-                            ],
-                            [
+                                { src: "aicte.jpg", alt: "AICTE" },
                                 { src: "aiims.jpg", alt: "AIMS" },
                                 { src: "atal.jpg", alt: "ATAL" },
                                 { src: "bfsi.jpg", alt: "BFSI" },
-                                { src: "dcal.jpg", alt: "DCAL" }
-                            ],
-                            [
+                                { src: "dcal.jpg", alt: "DCAL" },
                                 { src: "iimb.jpg", alt: "IIMB" },
                                 { src: "lsus.jpg", alt: "LSUS" },
                                 { src: "msme.jpg", alt: "MSME" },
                                 { src: "nhrd.jpg", alt: "NHRD" },
                                 { src: "umesh.jpg", alt: "Accreditation" },
                                 { src: "yiuva.jpg", alt: "YUVA" }
-                            ]
-                        ].map((row, rowIdx) => (
-                            <div key={rowIdx} className="flex flex-wrap justify-center gap-4">
-                                {row.map((item, index) => (
-                                    <div key={index} className="w-24 md:w-32 h-16 bg-white rounded-lg shadow-sm hover:shadow-[0_0_20px_rgba(3,62,150,0.2)] hover:scale-105 transition-all flex items-center justify-center p-2 cursor-pointer duration-300 relative overflow-hidden">
-                                        <Image
-                                            src={`/images/homepage/pramid-section/${item.src}`}
-                                            alt={item.alt}
-                                            fill
-                                            className="object-contain p-2"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        ))}
+                            ].map((item, index) => (
+                                <div key={index} className="w-full h-16 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 relative overflow-hidden">
+                                    <Image
+                                        src={`/images/homepage/pramid-section/${item.src}`}
+                                        alt={item.alt}
+                                        fill
+                                        className="object-contain p-2"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Desktop Pyramid View */}
+                        <div className="hidden md:flex flex-col items-center gap-4">
+                            {[
+                                [
+                                    { src: "aibpm.jpg", alt: "AIBPM" },
+                                    { src: "aicte.jpg", alt: "AICTE" }
+                                ],
+                                [
+                                    { src: "aiims.jpg", alt: "AIMS" },
+                                    { src: "atal.jpg", alt: "ATAL" },
+                                    { src: "bfsi.jpg", alt: "BFSI" },
+                                    { src: "dcal.jpg", alt: "DCAL" }
+                                ],
+                                [
+                                    { src: "iimb.jpg", alt: "IIMB" },
+                                    { src: "lsus.jpg", alt: "LSUS" },
+                                    { src: "msme.jpg", alt: "MSME" },
+                                    { src: "nhrd.jpg", alt: "NHRD" },
+                                    { src: "umesh.jpg", alt: "Accreditation" },
+                                    { src: "yiuva.jpg", alt: "YUVA" }
+                                ]
+                            ].map((row, rowIdx) => (
+                                <div key={rowIdx} className="flex flex-wrap justify-center gap-4">
+                                    {row.map((item, index) => (
+                                        <div key={index} className="w-32 h-16 bg-white rounded-lg shadow-sm hover:shadow-[0_0_20px_rgba(3,62,150,0.2)] hover:scale-105 transition-all flex items-center justify-center p-2 cursor-pointer duration-300 relative overflow-hidden">
+                                            <Image
+                                                src={`/images/homepage/pramid-section/${item.src}`}
+                                                alt={item.alt}
+                                                fill
+                                                className="object-contain p-2"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

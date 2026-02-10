@@ -45,13 +45,13 @@ export default function AcademicsSection() {
             </p>
 
             <div className="mt-6 sm:mt-7 md:mt-8 flex flex-wrap gap-3 sm:gap-4">
-              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-secondary text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-sky-800 transition">
+              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-sky-800 cursor-pointer text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-secondary hover:text-slate-50 transition">
                 Explore PGDM Curriculum
               </button>
-              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-secondary text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-sky-800 transition">
+              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-sky-800 cursor-pointer text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-secondary hover:text-slate-50 transition">
                 Meet Our Faculty
               </button>
-              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-secondary text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-sky-800 transition">
+              <button className="px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-md bg-sky-800 cursor-pointer text-slate-50 text-xs sm:text-sm font-semibold shadow-md hover:bg-secondary hover:text-slate-50 transition">
                 Industry Interface @ GIMS
               </button>
             </div>
