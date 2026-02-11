@@ -18,6 +18,7 @@ import PlacementSection from "./PlacementSection";
 import LifeGims from "./LifeGims";
 import CelebritiesSection from "./CelebritiesSection";
 import PlacementAndIlluminates from "./PlacementAndIlluminates";
+import PlacementOverview from "./PlacementOverview";
 
 
 const HomePage = () => {
@@ -32,7 +33,8 @@ const HomePage = () => {
       <HandsOnSection />
       <MentorshipSection />
       <AlumniReviews />
-      <PlacementSection />
+      {/* <PlacementSection /> */}
+      <PlacementOverview />
       <RankingHero />
       <CelebritiesSection />
       <LifeGims />
