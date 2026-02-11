@@ -40,7 +40,7 @@ export default function Hero() {
             className="absolute top-0 pointer-events-none border-white/25 border-b-[0.9375rem] h-[calc(100%_+_1.8125rem)] left-0 w-full rounded-none border-l-0 sm:left-[-1.875rem] sm:w-[calc(100%_+_1.875rem)] sm:rounded-bl-[5.625rem] sm:border-l-[0.9375rem]"
           />
           <div
-            className="absolute top-0 pointer-events-none border-white/25 border-b-[0.9375rem] h-[calc(98%_+_1.8125rem)] left-0 w-full rounded-none border-l-0 sm:left-[-0.875rem] sm:w-[calc(100%_+_1.875rem)] sm:rounded-bl-[4.71rem] sm:border-l-[0.9375rem]"
+            className="absolute top-0 pointer-events-none border-white/25 border-b-[0.9375rem] h-[calc(97.85%_+_1.8125rem)] left-0 w-full rounded-none border-l-0 sm:left-[-0.875rem] sm:w-[calc(100%_+_1.875rem)] sm:rounded-bl-[4.71rem] sm:border-l-[0.9375rem]"
           />
           <div className="relative w-full rounded-none sm:rounded-l-2xl md:rounded-l-[2.5rem] lg:rounded-l-[3.5rem] overflow-hidden bg-black">
 

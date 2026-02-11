@@ -12,7 +12,7 @@ export default function AcademicsSection() {
               <div className="rounded-t-[47%] bg-yellow-400/70 p-2 sm:p-2 md:p-2">
                 <div className="rounded-t-[47%] bg-secondary p-2 sm:p-2 md:p-2 overflow-hidden">
                   <img
-                    src="https://www.gims.net.in/img/celebrity/rupali-jagga.webp?v=1"
+                    src="/images/homepage/rupali-jagga-cele.webp"
                     alt="Student"
                     className="h-full w-full object-cover rounded-t-[47%]"
                   />
