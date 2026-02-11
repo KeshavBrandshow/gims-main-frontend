@@ -17,6 +17,7 @@ import AlumniReviews from "./AlumniReviews";
 import PlacementSection from "./PlacementSection";
 import LifeGims from "./LifeGims";
 import CelebritiesSection from "./CelebritiesSection";
+import PlacementAndIlluminates from "./PlacementAndIlluminates";
 
 
 const HomePage = () => {
@@ -59,6 +60,7 @@ const HomePage = () => {
       <NewsSection />
       <FlagShip2 />
       <FlagShip3 />
+      <PlacementAndIlluminates />
       <Footer />
     </>
   );

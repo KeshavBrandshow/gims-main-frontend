@@ -17,7 +17,7 @@ export default function HandsOnSection() {
           />
         </div>
 
-        {/* Right: Content */}
+        {/* Right: Content */}  
         <div className="lg:w-1/3 w-full flex flex-col justify-center bg-primary px-8 py-16 lg:py-20 xl:px-24">
           <div className="max-w-xl mx-auto lg:mx-0">
             {/* New small heading */}

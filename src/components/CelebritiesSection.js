@@ -15,34 +15,61 @@ const CelebritiesSection = () => {
         { id: 8, name: "Amit Mishra", role: "Singer", image: "/images/homepage/amit-mishra-cele.jpg" },
     ];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [itemsPerView, setItemsPerView] = useState(3);
+    // Duplicate the celebrities array to create a seamless loop
+    const marqueeList = [...celebrities, ...celebrities, ...celebrities];
+
+    // Ref for the container to manipulate DOM directly for performance
+    const containerRef = React.useRef(null);
+    const [isPaused, setIsPaused] = useState(false);
+
+    // Manual scroll handlers
+    const scrollNext = () => {
+        if (containerRef.current) {
+            if (containerRef.current) {
+                // Check screen width to determine scroll amount
+                const scrollAmount = window.innerWidth < 768 ? 280 : 350;
+                containerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    };
+
+    const scrollPrev = () => {
+        if (containerRef.current) {
+            if (containerRef.current) {
+                const scrollAmount = window.innerWidth < 768 ? 280 : 350;
+                containerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        }
+    };
 
     React.useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth < 768) setItemsPerView(1);
-            else if (window.innerWidth < 1024) setItemsPerView(2);
-            else setItemsPerView(3);
+        const container = containerRef.current;
+        if (!container) return;
+
+        const speed = 1; // Pixels per tick
+
+        const scroll = () => {
+            if (isPaused) return;
+
+            // Check for seamless loop reset condition based on current scroll position
+            if (container.scrollLeft >= container.scrollWidth / 3) {
+                container.scrollLeft = 0;
+            } else {
+                container.scrollLeft += speed;
+            }
         };
-        handleResize();
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
 
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev >= celebrities.length - itemsPerView ? 0 : prev + 1));
-    };
+        const intervalId = setInterval(scroll, 10); // 0.01s = 10ms
 
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev === 0 ? celebrities.length - itemsPerView : prev - 1));
-    };
+        return () => clearInterval(intervalId);
+    }, [isPaused]);
 
     return (
         <section className="py-12 bg-[#033E96] text-white relative overflow-hidden">
             {/* Background Accent */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_center,_#FFC300_0%,_transparent_70%)]"></div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="max-w-8xl mx-auto px-6 relative z-10">
                 {/* Header Section */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
                     <div className="space-y-4">
@@ -50,21 +77,21 @@ const CelebritiesSection = () => {
                             <span className="w-12 h-1 bg-[#FFC300]"></span>
                             <span className="text-[#FFC300] font-bold tracking-[0.3em] uppercase text-xs">Guest Spotlight</span>
                         </div>
-                        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
-                            Celebrities <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFC300] to-white">@ GIMS</span>
+                        <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+                            Celebrities <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFC300] to-white block md:inline">@ GIMS</span>
                         </h2>
                     </div>
 
-                    {/* Custom Navigation Icons */}
+                    {/* Custom Navigation Icons - Restored */}
                     <div className="flex gap-4">
                         <button
-                            onClick={prevSlide}
+                            onClick={scrollPrev}
                             className="w-14 h-14 cursor-pointer rounded-full border border-white/20 flex items-center justify-center hover:bg-[#FFC300] hover:text-[#033E96] transition-all"
                         >
                             <ChevronLeft size={24} />
                         </button>
                         <button
-                            onClick={nextSlide}
+                            onClick={scrollNext}
                             className="w-14 h-14 cursor-pointer rounded-full border border-white/20 flex items-center justify-center hover:bg-[#FFC300] hover:text-[#033E96] transition-all"
                         >
                             <ChevronRight size={24} />
@@ -73,16 +100,20 @@ const CelebritiesSection = () => {
                 </div>
 
                 {/* Celebrity Cards Slider Container */}
-                <div className="overflow-hidden">
+                <div
+                    ref={containerRef}
+                    className="overflow-x-hidden whitespace-nowrap pb-10" // Added pb-10 for shadow space and overflow handling
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                >
                     <div
-                        className="flex transition-transform duration-700 ease-in-out gap-6"
-                        style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
+                        className="inline-flex gap-6"
                     >
-                        {celebrities.map((person) => (
+                        {marqueeList.map((person, index) => (
                             <div
-                                key={person.id}
-                                className={`flex-shrink-0 relative group rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(255,195,0,0.2)] border border-[#FFC300]/20 h-[450px]`}
-                                style={{ width: `calc((100% - ${(itemsPerView - 1) * 24}px) / ${itemsPerView})` }}
+                                key={`${person.id}-${index}`}
+                                className={`flex-shrink-0 relative group rounded-[2rem] md:rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(255,195,0,0.2)] border border-[#FFC300]/20 w-[260px] md:w-[350px] h-[380px] md:h-[450px] whitespace-normal`}
+                            // Responsive width for marquee items
                             >
                                 {/* Image */}
                                 <Image
