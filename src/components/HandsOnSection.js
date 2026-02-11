@@ -7,7 +7,7 @@ export default function HandsOnSection() {
         {/* Left: Image */}
         <div className="lg:w-2/3 w-full relative min-h-[50vh] lg:min-h-full">
           <Image
-            src="https://www.gims.net.in/img/newhome/life-at-gims.jpg?v=1"
+            src="/images/homepage/hands-on.webp"
             alt="Life at GIMS campus"
             fill
             className="object-cover"
