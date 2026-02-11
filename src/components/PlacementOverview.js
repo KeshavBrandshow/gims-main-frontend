@@ -216,7 +216,7 @@ const PlacementOverview = () => {
                     <div className="flex flex-col justify-center">
                         <span className="text-[#822433] font-medium tracking-wide mb-2 text-lg">Placements Overview</span>
                         <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-[#033E96] mb-6 leading-tight font-oswald">
-                            The World's <span className="font-extrabold text-[#FFC300]">Leading</span><br />
+                            Corporate Resource <span className="font-extrabold text-[#FFC300]">Centre</span><br />
                             <span className="font-extrabold text-[#FFC300]">Companies</span> Hire Our Talent
                         </h2>
 
@@ -239,17 +239,17 @@ const PlacementOverview = () => {
                             {/* Card 2 */}
                             <div className="p-4 bg-[#FFC300]/10 rounded-lg">
                                 <h3 className="text-2xl font-bold text-[#033E96] mb-1">1300+</h3>
-                                <p className="text-[10px] font-medium text-gray-600">Companies Visited<br />for Recruitment</p>
+                                <p className="text-xs font-semibold text-gray-800">Companies Visited<br />for Recruitment</p>
                             </div>
                             {/* Card 3 - Dark */}
                             <div className="p-4 bg-[#033E96] text-white rounded-lg">
                                 <h3 className="text-2xl font-bold mb-1">54.75<span className="text-sm">LPA</span></h3>
-                                <p className="text-[10px] opacity-80">Highest National<br />Package Offered</p>
+                                <p className="text-xs font-semibold opacity-80">Highest National<br />Package Offered</p>
                             </div>
                             {/* Card 4 - Light */}
                             <div className="p-4 bg-gray-100 rounded-lg">
                                 <h3 className="text-2xl font-bold text-[#822433] mb-1">1.7<span className="text-sm">CR</span></h3>
-                                <p className="text-[10px] font-medium text-gray-600">Highest International<br />Package Offered</p>
+                                <p className="text-xs font-semibold text-gray-800">Highest International<br />Package Offered</p>
                             </div>
                         </div>
 
@@ -257,19 +257,19 @@ const PlacementOverview = () => {
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-gray-200 pt-6">
                             <div>
                                 <h4 className="text-3xl font-bold text-[#033E96] mb-1">20<span className="text-sm align-top">LPA</span></h4>
-                                <p className="text-[10px] text-gray-500 font-medium">Package Offered by <br /><span className="text-[#822433] font-bold">30+ Companies</span></p>
+                                <p className="text-xs font-semibold text-gray-800">Package Offered by <br /><span className="text-[#822433] font-bold">30+ Companies</span></p>
                             </div>
                             <div>
                                 <h4 className="text-3xl font-bold text-[#033E96] mb-1">15<span className="text-sm align-top">LPA</span></h4>
-                                <p className="text-[10px] text-gray-500 font-medium">Package Offered by <br /><span className="text-[#822433] font-bold">50+ Companies</span></p>
+                                <p className="text-xs font-semibold text-gray-800">Package Offered by <br /><span className="text-[#822433] font-bold">50+ Companies</span></p>
                             </div>
                             <div>
                                 <h4 className="text-3xl font-bold text-[#033E96] mb-1">10<span className="text-sm align-top">LPA</span></h4>
-                                <p className="text-[10px] text-gray-500 font-medium">Package Offered by <br /><span className="text-[#822433] font-bold">100+ Companies</span></p>
+                                <p className="text-xs font-semibold text-gray-800">Package Offered by <br /><span className="text-[#822433] font-bold">100+ Companies</span></p>
                             </div>
                             <div>
                                 <h4 className="text-3xl font-bold text-[#033E96] mb-1">7<span className="text-sm align-top">LPA</span></h4>
-                                <p className="text-[10px] text-gray-500 font-medium">Package Offered by <br /><span className="text-[#822433] font-bold">300+ Companies</span></p>
+                                <p className="text-xs font-semibold text-gray-800">Package Offered by <br /><span className="text-[#822433] font-bold">300+ Companies</span></p>
                             </div>
                         </div>
 
@@ -281,7 +281,7 @@ const PlacementOverview = () => {
 
             {/* Top Tier Companies Section */}
             <div className="mt-12 border-t border-gray-200 pt-8">
-                <h3 className="text-center text-gray-500 text-xs mb-8 tracking-wide uppercase">Top - Tier Companies in Our Placement Network</h3>
+                <h3 className="text-center text-gray-500 text-xl mb-8 tracking-wide uppercase">Top - Tier Companies in Our Placement Network</h3>
                 <CompanyStatsSlider />
             </div>
         </section>
