@@ -82,12 +82,12 @@ const MainMenu = () => {
               <a href="#" className="flex items-center gap-3">
                 <div className="flex items-center gap-2">
                   <div className="rounded-sm flex items-center justify-center relative bg-white">
-                    <Image src='/images/main-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto px-2 py-2' />
+                    <Image src='/images/main-logo.png' alt="Logo" width={100} height={100} className='w-full h-auto px-2 py-2' />
                   </div>
-                  <div>
+                  {/* <div>
                     <div className="text-white font-serif tracking-[0.15em] text-lg">GIMS</div>
                     <div className="text-white font-serif tracking-[0.2em] text-xs -mt-1 opacity-90">COLLEGE</div>
-                  </div>
+                  </div> */}
                 </div>
               </a>
             </div>
@@ -246,12 +246,12 @@ const MainMenu = () => {
               <div className="max-w-[1400px] mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
                 <a href="#" className="flex items-center gap-3">
                   <div className="rounded-sm flex items-center justify-center relative bg-white">
-                    <Image src='/images/main-logo.png' alt="Logo" width={50} height={50} className='w-full h-auto px-2 py-2' />
+                    <Image src='/images/main-logo.png' alt="Logo" width={100} height={100} className='w-full h-auto px-2 py-2' />
                   </div>
-                  <div>
+                  {/* <div>
                     <div className="text-white font-serif tracking-[0.15em] text-lg">GIMS</div>
                     <div className="text-white font-serif tracking-[0.2em] text-xs -mt-1 opacity-90">COLLEGE</div>
-                  </div>
+                  </div> */}
                 </a>
                 <button
                   onClick={() => setIsExploreGimsOpen(false)}
