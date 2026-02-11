@@ -7,22 +7,10 @@ export default function AcademicsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-[0.42fr_0.58fr] items-center gap-8 sm:gap-16 md:gap-24 lg:gap-36">
           {/* LEFT ARCH IMAGE */}
-          <div className="flex justify-center">
-            <div className="relative w-full max-w-[250px] sm:max-w-[300px] md:max-w-md">
-              <div className="rounded-t-[47%] bg-yellow-400/70 p-2 sm:p-2 md:p-2">
-                <div className="rounded-t-[47%] bg-secondary p-2 sm:p-2 md:p-2 overflow-hidden">
-                  <img
-                    src="/images/homepage/rupali-jagga-cele.webp"
-                    alt="Student"
-                    className="h-full w-full object-cover rounded-t-[47%]"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* RIGHT CONTENT */}
-          <div className="main-text">
+
+
+            <div className="main-text">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-tight font-extrabold text-slate-50">
               Academics at GIMS<br />built for industry.
             </h2>
@@ -56,6 +44,24 @@ export default function AcademicsSection() {
               </button>
             </div>
           </div>
+
+
+
+          {/* Right side image */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-[250px] sm:max-w-[300px] md:max-w-md">
+              <div className="rounded-t-[47%] bg-yellow-400/70 p-2 sm:p-2 md:p-2">
+                <div className="rounded-t-[47%] bg-secondary p-2 sm:p-2 md:p-2 overflow-hidden">
+                  <img
+                    src="/images/homepage/acadmic-section.webp"
+                    alt="Student"
+                    className="h-full w-full object-cover rounded-t-[47%] "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

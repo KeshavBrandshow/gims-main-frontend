@@ -46,8 +46,8 @@ const HomePage = () => {
           <>We believe managers are made by doing. If you are ready to learn, travel, experiment and solve real‑world problems, GIMS becomes your launchpad from <strong>idea to execution</strong>.</>
         ]}
         buttonText="Flagship Experiential PGDM"
-      /> */}
-      {/* <FlagshipCardSection
+      />
+      <FlagshipCardSection
         alignment="right"
         title="Explore Your Way"
         content={[
