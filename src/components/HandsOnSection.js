@@ -2,22 +2,24 @@ import Image from "next/image";
 
 export default function HandsOnSection() {
   return (
-    <section className="w-full bg-primary card-bg">
-      <div className="w-full flex flex-col lg:flex-row min-h-[80vh]">
+    <section className="w-full bg-primary card-bg overflow-visible">
+      <div className="w-full flex flex-col lg:flex-row min-h-[80vh] overflow-visible">
         {/* Left: Image */}
-        <div className="lg:w-2/3 w-full relative min-h-[50vh] lg:min-h-full">
-          <Image
-            src="/images/homepage/hands-on.webp"
-            alt="Life at GIMS campus"
-            fill
-            className="object-cover"
-            options={{
-              priority: true
-            }}
-          />
+        <div className="lg:w-2/3 w-full relative min-h-[100vh] lg:min-h-full overflow-visible rounded-r-4xl">
+          <div className="relative w-full h-full z-10 translate-y-12 lg:translate-y-8 shadow-2xl rounded-r-4xl">
+            <Image
+              src="/images/homepage/hands-on.webp"
+              alt="Life at GIMS campus"
+              fill
+              className="object-cover border-r-[12px] border-blue-700 rounded-r-4xl"
+              options={{
+                priority: true
+              }}
+            />
+          </div>
         </div>
 
-        {/* Right: Content */}  
+        {/* Right: Content */}
         <div className="lg:w-1/3 w-full flex flex-col justify-center bg-primary px-8 py-16 lg:py-20 xl:px-24">
           <div className="max-w-xl mx-auto lg:mx-0">
             {/* New small heading */}
@@ -54,5 +56,6 @@ export default function HandsOnSection() {
         </div>
       </div>
     </section>
+
   );
 }

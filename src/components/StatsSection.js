@@ -69,7 +69,7 @@ export default function StatsSection() {
               <img
                 src="/images/about-us.jpg"
                 alt="Students in front of campus building"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover border-l-[12px] border-t-[12px] border-yellow-300 rounded-l-4xl"
               />
             </div>
           </div>
